@@ -7,6 +7,12 @@ body {
     float: left;
     padding: 0% 10%;
   }
+
+  marquee {
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+  }
   
   body button {
     font-size: 30px;
@@ -18,3 +24,8 @@ body {
     border-radius: 5px;
     margin-bottom: 20px;
   }  
+
+  ul {
+    font-size: 20px;
+    text-decoration: none;
+  }

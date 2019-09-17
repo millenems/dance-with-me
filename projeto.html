@@ -12,9 +12,32 @@
 <body>
     <div class="game-intro">
         <button id="start-button">StartGame</button>
+    <marquee direction = "down" scrollamount="5">LET'S DAAANCE!</marquee>
+    <ul>
+    <h2>COMMANDS</h2>
+        <li>"T" for red</li>
+        <li>"Y" for green</li>
+        <li>"U" for yellow</li>
+        <li>"G" for orange</li>
+        <li>"H" for white</li>
+        <li>"J" for blue</li>
+        <li>"B" for purple</li>
+        <li>"N" for pink</li>
+        <li>"M" for gray</li>
+    </ul>
     </div>
     <div id="game-board">
+    <h2 id = "score"></h2>
         <canvas id="canvas" width="500" height="900"></canvas>
     </div>
+    <script>
+    var myVar = setInterval(setColor, 500);
+ 
+function setColor() {
+  var x = document.body;
+  x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "white" : "yellow";
+}
+
+</script>
 </body>
 </html>
