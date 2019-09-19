@@ -5,7 +5,23 @@ body {
   
   .game-intro {
     float: left;
-    padding: 0% 10%;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+
+  #game-board {
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  canvas {
+    margin-right: 120px;
   }
 
   marquee {
@@ -16,7 +32,7 @@ body {
   
   body button {
     font-size: 30px;
-    background-color: #870007;
+    background-color: #637A49;
     color: #fff;
     padding: 20px 40px;
     border: 0;
@@ -27,5 +43,34 @@ body {
 
   ul {
     font-size: 20px;
-    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  video {
+  position: absolute; 
+  width: 480px;
+  height: 270px; 
+  z-index: 2; 
+  top: 200px;
+  left: 200px;
+  cursor: pointer;
+  }
+
+  #newvideo-11 {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+  }
+
+  #tryAgain-button {
+    text-align: center
+  }
+
+  #myVideoDancing {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }

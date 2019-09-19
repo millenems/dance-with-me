@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="projeto.js"></script>
     <link rel="stylesheet" href="projeto.css">
 
     <title>Dance with me</title>
 </head> 
 <body>
     <div class="game-intro">
-        <button id="start-button">StartGame</button>
-    <marquee direction = "down" scrollamount="5">LET'S DAAANCE!</marquee>
-    <ul>
-    <h2>COMMANDS</h2>
+        <button id="start-button">Start Game</button>
+        <button id="tryAgain-button">Try Again</button>
+    <marquee id="lets" direction = "down" scrollamount="5">LET'S DAAANCE!</marquee>
+    <ul id="commands">
+    <h2>PAY ATENTION !!!</h2>
+    <h3>COMMANDS</h3>
         <li>"T" for red</li>
         <li>"Y" for green</li>
         <li>"U" for yellow</li>
@@ -27,17 +28,49 @@
     </ul>
     </div>
     <div id="game-board">
-    <h2 id = "score"></h2>
+        <h2 id = "score"></h2>
         <canvas id="canvas" width="500" height="900"></canvas>
     </div>
-    <script>
-    var myVar = setInterval(setColor, 500);
- 
-function setColor() {
-  var x = document.body;
-  x.style.backgroundColor = x.style.backgroundColor == "yellow" ? "white" : "yellow";
-}
 
-</script>
+<video id="newvideo" width="320" height="240" muted= true;>
+    <source type="video/mp4", src="./dancer-2/musicaEt.mp4">  
+</video>
+<video id="newvideo-1" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(1).mp4">  
+</video>
+<video id="newvideo-2" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(2).mp4">
+</video>
+<video id="newvideo-3" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(3).mp4">
+</video>
+<video id="newvideo-4" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(4).mp4">
+</video>
+<video id="newvideo-5" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(5).mp4">
+</video>
+<video id="newvideo-6" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(6).mp4">
+</video>
+<video id="newvideo-7" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(7).mp4">
+</video>
+<video id="newvideo-8" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(8).mp4">
+</video>
+<video id="newvideo-9" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(9).mp4">
+</video>
+<video id="newvideo-10" width="320" height="240" muted>
+    <source type="video/mp4", src="./dancer-2/musicaEt(10).mp4">
+</video>
+<div id="newvideo-11">
+    <video width="500" height="420" autoplay muted>
+        <source type="video/mp4", src="./dancer-2/video.mp4">
+    </video>
+</div>
+    
+    <script type="text/javascript" src="projeto.js"></script>
 </body>
 </html>
